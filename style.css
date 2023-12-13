@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.hero{
+    margin: 30px 10%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.navbar .logo h3{
+    font-weight: 800;
+    font-size: 20px;
+}
+.navbar .links ul{
+    display: flex;
+    list-style-type: none;
+    color: black;
+    gap: 25px;
+}
+.navbar .links ul li a{
+    font-weight: 700;
+    color: black;
+}
+
+
+.description{
+    margin: 100px 0px 100px 0px;
+    display: flex;
+}
+
+.description .content h1{
+    font-size: 50px;
+    padding-bottom: 40px
+}
+.description .content p{
+    max-width: 60%;
+    padding-bottom: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.description .content button{
+    padding: 15px 25px;
+    background-color: #FF6464;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.description .content button:hover{
+    border: 2px solid #FF6464;
+    background: transparent;
+    color: black;
+}
+
+.recent-post{
+    margin: 100px 0px 0px 0px;
+    background-color: rgb(235, 246, 255);
+}
+.recent-post .title{
+    margin: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.recent-post .title h4{
+    font-size: 18px;
+}
+.recent-post .title a{
+    color: rgb(133, 199, 215);
+}
+.recent-post .posts{
+    margin: 30px 10%;
+    display: flex;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+.recent-post .posts .post{
+    padding: 20px 30px 20px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.post h3{
+    font-size: 25px
+}
+.post p{
+    line-height: 25px;
+}
+.post .time span{
+    padding-right: 5px;
+}
+.vl{
+    border-left: 2px solid black;
+    height: 7px;
+}
+
+
+
+.featured-work{
+    margin: 30px 10% 50px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured-work .works .work{
+    display: flex;
+    gap: 50px;
+    padding: 30px 0px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+.featured-work .works .work .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured-work .works .work .desc .time{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.featured-work .works .work .desc .time span{
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.featured-work .works .work .desc .time p{
+    color: grey;
+}
+.featured-work .works .work .desc .text{
+    max-width: 70%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0px 100px 0px ;
+}
+.footer .logos{
+    display: flex;
+    gap: 40px;
+    padding-bottom: 25px;
+}
+
+
+/* responsive code */
+
+@media(max-width: 750px){
+
+    .description .content h1{
+        font-size: 30px;
+    }
+    .description .content p{
+        max-width: 80%;
+    }
+    .description .content button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+@media(max-width: 530px){
+    .description{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+}
+@media(max-width: 650px){
+    .recent-post .posts{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width: 690px){
+    .featured-work .works .work .desc{
+        gap: 10px;
+    }
+    .featured-work .works .work .desc h2{
+        font-size: 16px;
+    }
+}
